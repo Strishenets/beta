@@ -36,15 +36,10 @@ int main()
 
             }
         }
-        case 2:{
+
 
         }
 
-        case 5:
-            break;
-        default:  printf("Такої операції немає  \n");
-              printf("---------------------\n");
-        continue;
 
 
     }
