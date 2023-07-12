@@ -36,7 +36,7 @@ int main()
 
             }
         }
-        case 2:{
+        case 2:{ printf("Tanya lox"); //якась фігня повна
 
         }
 
