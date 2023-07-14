@@ -30,6 +30,7 @@ int menu (int user_action)
     printf("-------------------------\n\n");
 
     return user_action;
+    
 }
 
 void katalog_output(struct prod_info products[10])
@@ -197,6 +198,12 @@ void filter_choose(struct prod_info products[10])
     {
         printf ("Немає продуктів за заданим фільтром\n");
     }
+=======
+    
+}
+void filter_choose(struct prod_info products[10])
+{
+    
 }
 
 void seach_prod(struct prod_info products[10])
@@ -225,6 +232,8 @@ void seach_prod(struct prod_info products[10])
             printf("Продукту з таким кодом немає\n");
         }
     printf("-------------------------\n\n");
+=======
+   
 }
 
 int add_prod (struct prod_info products[10], int cart[10], int kilk_cart)
@@ -292,6 +301,7 @@ int add_prod (struct prod_info products[10], int cart[10], int kilk_cart)
         }
     }
     return kilk_cart;
+    
 }
 
 void cart_output(struct prod_info products[10], int cart[10], int kilk_cart)
@@ -319,6 +329,7 @@ void cart_output(struct prod_info products[10], int cart[10], int kilk_cart)
             }
         }
     }
+    
 }
 
 void order_process(struct prod_info products[10], int cart[10], int kilk_cart)
@@ -346,13 +357,36 @@ void order_process(struct prod_info products[10], int cart[10], int kilk_cart)
         }
         printf ("Загальна сума %0.2f\n", total);
     }
+    
+}
+
+int panel(int user_action)
+{
+    printf ("\n");
+    printf ("Натисніть\n");
+    printf ("1 - Каталог\n");
+    printf ("2 - Фільтри\n");
+    printf ("3 - Знайти товар\n");
+    printf ("4 - Додати товар в кошик\n");
+    printf ("5 - Видалити товар з кошика\n");
+    printf ("6 - Переглянути в кошик\n");
+    printf ("7 - Про проєкт\n");
+    printf ("8 - Вихід\n");
+    printf ("\n");
+    scanf ("%d", &user_action);
+    printf ("\n");
+    return user_action;
+}
+
+void project_info()
+{
+    printf ("Інформація про проект  учасників команди\n");
 }
 
 int main()
 {
     SetConsoleOutputCP(1251);
     int user_action;
-
     struct prod_info products[10];
     katalog (products);
 
@@ -476,6 +510,73 @@ void katalog(struct prod_info products[10])
     strcpy(products[9].gender, "Чоловічий");
     strcpy(products[9].size, "M");
     products[9].cost = 67.50;
+    
+}
+
+void our_project()
+{
+    
+}
+    user_action = panel(user_action);
+
+    do {
+        switch (user_action)
+        {
+            case 1:
+            {
+                user_action = panel(user_action);
+                continue;
+            }
+            case 2:
+            {
+                user_action = panel(user_action);
+                continue;
+            }
+            case 3:
+            {
+                user_action = panel(user_action);
+                continue;
+            }
+            case 4:
+            {
+                user_action = panel(user_action);
+                continue;
+            }
+            case 5:
+            {
+                user_action = panel(user_action);
+                continue;
+            }
+            case 6:
+            {
+                user_action = panel(user_action);
+                continue;
+            }
+            case 7:
+            {
+                project_info();
+                user_action = panel(user_action);
+                continue;
+            }
+            case 8:
+            {
+                printf ("Програма закінчена\n");
+                break;
+            }
+            default:
+            {
+                printf ("Такої функції немає\n");
+                user_action=panel(user_action);
+                continue;
+            }
+        }
+    } while (user_action!=8);
+    return 0;
+}
+
+void katalog(struct prod_info products[10])
+{
+    
 }
 
 void our_project()
@@ -493,4 +594,8 @@ void our_project()
     printf ("Малинка Тетяна\n");
     printf ("Пилипенко Наталя\n");
     printf ("Стрішенець Ангеліна\n\n");
+
+    
+}
+
 }
