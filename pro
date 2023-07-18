@@ -27,7 +27,7 @@ int menu (int user_action)
     printf("-------------------------\n");
     printf ("Опція - ");
     scanf ("%d", &user_action);
-    printf("-------------------------\n\n");
+    printf("-------------------------------------\n\n");
 
     return user_action;
     
