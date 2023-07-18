@@ -92,6 +92,7 @@ void filter_choose(struct prod_info products[19])
         {
         case 1:
             {
+
                 printf("--------------------------------------------------------\n");
                 printf ("Гендер:\n");
                 printf ("\t1. Чоловічий\n");
