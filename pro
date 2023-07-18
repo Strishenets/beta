@@ -78,41 +78,7 @@ void filter_choose(struct prod_info products[10])
         {
         case 1:
             {
-                printf ("\tГендер\n");
-                printf ("1 - Чоловічий\n");
-                printf ("2 - Жіночий\n");
-                printf ("3 - Унісекс\n");
-                printf ("4 - Усі\n");
-                scanf ("%d", &user_action_filter_next);
-                switch (user_action_filter_next)
-                {
-                    case 1:
-                    {
-                        strcpy(fil_gender, "Чоловічий");
-                        continue;
-                    }
-                    case 2:
-                    {
-                        strcpy(fil_gender, "Жіночий");
-                        continue;
-                    }
-                    case 3:
-                    {
-                        strcpy(fil_gender, "Унісекс");
-                        continue;
-                    }
-                    case 4:
-                    {
-                        strcpy(fil_gender, "Усі");
-                        continue;
-                    }
-                    default:
-                    {
-                        printf ("Немає такої опції\n");
-                    }
-                }
-                continue;
-            }
+              
         case 2:
             {
                 printf ("\tРозмір\n");
